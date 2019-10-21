@@ -1,0 +1,72 @@
+html {
+font-size:10px;
+font-family: Dosis, sans-serif, Times New Roman; /* Didn't load the first font... I need to look into that... But this has been great to test the back up fonts! */
+}
+
+main {
+max-width: 1200px; /* I'm running 1920x1080 resolution on all of my computers. I'll center everything up nicely at some point. Should still fit nicely on that popular 1366x768 too.. not to say I won't test it though.*/
+
+}
+
+
+body {
+	background-color:black;
+}
+
+header {
+	text-align: center; /* Aligns header text to middle of its element*/
+ font-size: 3.5rem;
+ color: #0000ff;
+ background-color: #00001a; /* For completion sake. But I want to keep it "black" */
+ border-style: solid;
+ border-width: 0rem 0rem .5rem 0rem; /* Starting from left to right, TOP, RIGHT, BOTTOM LEFT*/
+ border-bottom-color: #0000ff;
+ margin: 5rem 5rem 5rem 5rem; /* If all sides are equal, one value alone is enough. But I like to define them all. I have trouble remembering the what 2 and 3 values affect.*/
+}
+
+p {
+	font-size: 2rem;
+	color:darkslategray;
+}
+
+a {
+	font-size: 2rem;
+}
+
+a:link {
+	color: #00ff00;
+	text-decoration: none;  /* "Text decoration is mostly used to remove underlines from links" Thanks w3 schools. */
+}
+
+a:visited {
+	color: #800;
+}
+
+a:hover {
+	color: #ff00ff;
+	background-color: #0000ff;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ebebe0;
+	background-color: #cc3300;
+	text-decoration: none;
+}
+
+
+h1 {
+	font-size: 3rem;
+	color:darkslategray;
+
+}
+
+h2 {
+		font-size: 3rem;
+}
+
+li {
+	font-size: 2rem;
+	line-height: 1.5;
+	color:darkslategray;
+}
