@@ -1,0 +1,79 @@
+/* Positioning is hard. I'm leaving notes here so I can memorize the concepts enough to struggle through until I get it down.*/
+/* Box Level Elements by default stack right on top of eachother!!! */
+
+/* Position Property values: */
+/* STATIC - Static tells the element to position itself using normal document flow (default)*/
+/* RELATIVE - Relative positioning is still considered part of the normal document flow, but it allows you to tweak an elements position based on offset valzues you assign */
+/* ABSOLUTE - Not normal document flow. It removes the element from normal flow and repositions it based on offset values given, allowing others to move into its old position */
+/* INHERIT - inherits parent element values */
+/* FIXED - Fixed elements are considered to be absolutely positioned but they're always positioned relative to the active view port*/
+
+/* Float Property Values - Left, right, none, inherit */
+/* Clear Property specifies what elements cannot float beside the cleared element and on which side. */
+/* Clear Values - none (default), left, right, both, inherit */
+
+/* Display Propert: grid; */
+/* Draws a grid within a container (has horizonal rows and vertical columns)*/
+
+body {
+  width: 100%;
+  font-family: 'dosis', 'times new roman';
+  background-color: #737373;
+  background-image: linear-gradient(to bottom right, #333, #000000);
+}
+
+main {
+  width: 1000px;
+  border-color: #bfbfbf;
+  border-radius: 20px;
+  background-color: #bfbfbf;
+  margin: 50px auto 050px auto;
+  padding: 50px;
+}
+
+header {
+  margin: 15px auto 15px auto;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border: double 3px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 100px #ffffff inset;
+
+}
+
+footer {
+  width: 1300px;
+  margin: 0 auto 0 auto;
+  padding: 0px;
+  background-color: #bfbfbf;
+  border: double 3px;
+  border-color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px; /* h-offset, v-offset, blur, spread color | inset| initial| inherit */
+  padding: 1px;
+  margin: 0 auto 0 auto;
+}
+
+figcaption {
+  padding: 25px 0px 0px 0px;
+  text-align: center;
+}
+
+.footer-container {
+  position: relative;
+}
+
+.para-footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

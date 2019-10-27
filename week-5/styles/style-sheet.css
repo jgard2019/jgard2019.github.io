@@ -1,0 +1,204 @@
+/* Positioning is hard. I'm leaving notes here so I can memorize the concepts enough to struggle through until I get it down.*/
+/* Box Level Elements by default stack right on top of eachother!!! */
+
+/* Position Property values: */
+/* STATIC - Static tells the element to position itself using normal document flow (default)*/
+/* RELATIVE - Relative positioning is still considered part of the normal document flow, but it allows you to tweak an elements position based on offset valzues you assign */
+/* ABSOLUTE - Not normal document flow. It removes the element from normal flow and repositions it based on offset values given, allowing others to move into its old position */
+/* INHERIT - inherits parent element values */
+/* FIXED - Fixed elements are considered to be absolutely positioned but they're always positioned relative to the active view port*/
+
+/* Float Property Values - Left, right, none, inherit */
+/* Clear Property specifies what elements cannot float beside the cleared element and on which side. */
+/* Clear Values - none (default), left, right, both, inherit */
+
+/* Display Propert: grid; */
+/* Draws a grid within a container (has horizonal rows and vertical columns)*/
+
+
+html {
+font-size:10px;
+font-family: 'Dosis', 'sans-serif', 'Times New Roman' ; /* Didn't load the first font... I need to look into that... But this has been great to test the back up fonts! */
+}
+
+body {
+	margin: auto;
+	max-width: 1000px; /* I'm running 1920x1080 resolution on all of my computers. I'll center everything up nicely at some point. Should still fit nicely on that popular 1366x768 too.. not to say I won't test it though.*/
+	background-color:black;
+}
+
+main {
+		margin: auto;
+}
+
+header {
+	text-align: center; /* Aligns header text to middle of its element*/
+	color: #0000ff;
+	background-color: #000000;
+	border-style: double;
+	border-radius: 15px;
+	border-width: 1.0rem 0.5rem 1.0rem 0.5rem; /* Starting from left to right, TOP, RIGHT, BOTTOM LEFT*/
+	border-bottom-color: #0000ff;
+	margin: 5rem 5rem 5rem 5rem; /* If all sides are equal, one value alone is enough. But I like to define them all. I have trouble remembering the what 2 and 3 values affect.*/
+	padding: 10px;
+}
+
+p {
+	font-size: 2rem;
+	color: #727272;
+}
+
+a {
+	font-size: 2rem;
+}
+
+a:link {
+	color: ##001BEA;
+	text-decoration: none;  /* "Text decoration is mostly used to remove underlines from links" Thanks w3 schools. */
+}
+
+a:visited {
+	color: #EA0000;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ebebe0;
+	background-color: #cc3300;
+	text-decoration: none;
+}
+
+
+h1 {
+	margin: 0px;
+	font-size: 4rem;
+	color: #727272;
+
+}
+
+h2 {
+		font-size: 3.0rem;
+		color: #727272;
+}
+
+h3 {
+	font-size: 3.0rem;
+	color: white;
+	line-height: 10px;
+
+}
+
+li {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color: #727272;
+}
+
+section {
+ width: 75%;
+ border-style: double;
+ border-color: #0000ff;
+ border-radius: 15px;
+ border-width: 5px;
+ margin: 10px auto 10px auto;
+ padding: 25px;
+
+}
+
+footer {
+	border-style: dashed;
+	border-width: 1px 1px 1px 1px;
+	border-color: gray;
+	margin: auto;
+	text-align: center;
+	clear: both;
+}
+
+/*  ==========		#id and .class section		==========  */
+
+/*
+What a nightmare this has been to create, and it still does not include all the things I wanted.
+I wanted 3 columns of boxes.
+I wanted gaps in between the columns.
+And I wanted borders with radii on them.
+I wanted those to be centered horizontally on the page, and equally distributed within its containing row.
+I found that in order to do this, I had to make the dimensions of each box fit mathmatically within the containing DIV.
+
+What I was unable to do...
+Align any and all text vertically within the box.
+Make the boxes stack on top of eachother as the window shrinks below that 1000px I set for the body.
+Oh how I have tried. I had a great many strange results.
+*/
+
+.box1 {
+
+	width: 240px;
+	height: 140px;
+	margin: 5px 10px 5px 10px;
+	border: solid 5px;
+	border-color: red;
+	border-radius: 10px;
+	background-color: red;
+	float: left;
+	text-align: center;
+
+}
+
+.box2 {
+	width: 240px;
+	height: 140px;
+	margin: 5px 10px 5px 10px;
+	border: solid 5px;
+	border-color: blue;
+	border-radius: 10px;
+	background-color: blue;
+	float: left;
+	text-align: center;
+}
+
+.box3 {
+	width: 240px;
+	height: 140px;
+	margin: 5px 10px 5px 10px;
+	border: solid 5px;
+	border-color: #ff6600;
+	border-radius: 10px;
+	background-color: #ff6600;
+	float: left;
+	text-align: center;
+
+}
+
+.float-better {
+	height: 160px;
+	width: 810px;
+	margin: 0 auto;
+}
+
+.clear-here {
+	clear: both;
+}
+
+
+.p-box {
+	color: white;
+}
+
+.nav-ul {
+	list-style-type: none;
+	display: block;
+}
+
+.nav-li {
+	background-color: black;
+	background-image: linear-gradient(to top right, #000000, #727272);
+	border-radius: 10px;
+ 	display: inline;
+	padding: 5px 15px 5px 15px;
+	margin: 5px;
+
+}
