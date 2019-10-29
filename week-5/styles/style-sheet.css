@@ -134,6 +134,12 @@ Make the boxes stack on top of eachother as the window shrinks below that 1000px
 Oh how I have tried. I had a great many strange results.
 */
 
+.float-better {
+	max-height: 160px;
+	max-width: 810px;
+	margin: auto;
+}
+
 .box1 {
 
 	width: 240px;
@@ -171,12 +177,6 @@ Oh how I have tried. I had a great many strange results.
 	float: left;
 	text-align: center;
 
-}
-
-.float-better {
-	height: 160px;
-	width: 810px;
-	margin: 0 auto;
 }
 
 .clear-here {
