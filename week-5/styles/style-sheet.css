@@ -53,7 +53,7 @@ a {
 }
 
 a:link {
-	color: ##001BEA;
+	color: #001BEA;
 	text-decoration: none;  /* "Text decoration is mostly used to remove underlines from links" Thanks w3 schools. */
 }
 
