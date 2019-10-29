@@ -16,25 +16,25 @@
 /* Draws a grid within a container (has horizonal rows and vertical columns)*/
 
 body {
-  width: 100%;
+
   font-family: 'dosis', 'times new roman';
   background-color: #737373;
   background-image: linear-gradient(to bottom right, #333, #000000);
 }
 
 main {
-  width: 1000px;
+  width: 75%;
   border-color: #bfbfbf;
   border-radius: 20px;
   background-color: #bfbfbf;
   margin: 50px auto 050px auto;
-  padding: 50px;
+  padding: 20px;
 }
 
 header {
   margin: 15px auto 15px auto;
   width: 80%;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   border: double 3px;
   border-radius: 15px;
@@ -42,38 +42,42 @@ header {
 
 }
 
-footer {
-  width: 1300px;
-  margin: 0 auto 0 auto;
-  padding: 0px;
-  background-color: #bfbfbf;
-  border: double 3px;
-  border-color: white;
-  border-radius: 15px;
-  text-align: center;
-}
-
 img {
   max-width: 100%;
-  display: block;
   border-radius: 15px;
   box-shadow: 10px 10px 20px; /* h-offset, v-offset, blur, spread color | inset| initial| inherit */
   padding: 1px;
-  margin: 0 auto 0 auto;
 }
+
+#img-section {
+  width: 50%;
+  float: left;
+  padding: 1em;
+}
+
+#about-this-picture{
+}
+
+#birthplace {
+}
+
+.clear-float-1{
+  clear: left;
+}
+
+.bit-columns {}
+
 
 figcaption {
   padding: 25px 0px 0px 0px;
+}
+footer {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #bfbfbf;
+  border: double 3px;
+  border-color: white;
+  border-radius: 20px;
   text-align: center;
-}
-
-.footer-container {
-  position: relative;
-}
-
-.para-footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
