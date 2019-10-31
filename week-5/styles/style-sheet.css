@@ -23,7 +23,7 @@ font-family: 'Dosis', 'sans-serif', 'Times New Roman' ; /* Didn't load the first
 
 body {
 	margin: auto;
-	max-width: 1000px; /* I'm running 1920x1080 resolution on all of my computers. I'll center everything up nicely at some point. Should still fit nicely on that popular 1366x768 too.. not to say I won't test it though.*/
+	max-width: 80%;
 	background-color:black;
 }
 
@@ -86,10 +86,14 @@ h2 {
 }
 
 h3 {
-	font-size: 3.0rem;
 	color: white;
-	line-height: 10px;
+	font-size: 3rem;
+	padding: 5px;
+}
 
+h4 {
+	color: white;
+	font-size: 2rem;
 }
 
 li {
@@ -121,78 +125,63 @@ footer {
 /*  ==========		#id and .class section		==========  */
 
 /*
-What a nightmare this has been to create, and it still does not include all the things I wanted.
-I wanted 3 columns of boxes.
-I wanted gaps in between the columns.
-And I wanted borders with radii on them.
-I wanted those to be centered horizontally on the page, and equally distributed within its containing row.
-I found that in order to do this, I had to make the dimensions of each box fit mathmatically within the containing DIV.
-
-What I was unable to do...
-Align any and all text vertically within the box.
-Make the boxes stack on top of eachother as the window shrinks below that 1000px I set for the body.
-Oh how I have tried. I had a great many strange results.
+Following the MDN tutorial on tree column awesomeness, I was able to get this working. I wanted responsive 3 columns with
+radii and each its own content. There's enough rules to make this easy, the <h1-2-3-> almost denote each section. I've Tested varying sizes and it acts lthe way I want.
+I'm not sure how to improv e the mobile lay out yet... You mentioned on slack something to the effect of "50% of web traffic is from mobile, your site enough be mobile ready"
+Or at least passible. I'll rise to that challenge, but I am struggling to find enough time for proper experimentation. Positioning is hard.
 */
 
-.float-better {
-	max-height: 160px;
-	max-width: 810px;
-	margin: auto;
+.float-better {  /* CONTAINER div. To save time i didnt change the class name. It also helps me remember what this used to be. A nightmare.*/
+	margin: 0 auto 0 auto; /* Center left-right within parent element.*/
+	padding: 10px;
+	width: 80%; /* Basically, fill 75% of parent element with thine self.*/
+	column-gap: 10px;
+	column-count: 3;
+	vertical-align: middle; /* Top and bottom centerage.*/
 }
 
 .box1 {
-
-	width: 240px;
-	height: 140px;
-	margin: 5px 10px 5px 10px;
-	border: solid 5px;
-	border-color: red;
-	border-radius: 10px;
+	padding: 5px;
 	background-color: red;
-	float: left;
+	border-radius: 15px;
+	break-inside: avoid; /* I really followed the tutorial on this and the page-break-inside property. I got the gist that it would not Break
+	the column until there was another <h2-3-4> tag... seems to work fantastic, but the technical function of it is still unclear (or maybe its really that simple...?)*/
+	page-break-inside: avoid;
 	text-align: center;
 
 }
 
 .box2 {
-	width: 240px;
-	height: 140px;
-	margin: 5px 10px 5px 10px;
-	border: solid 5px;
-	border-color: blue;
-	border-radius: 10px;
+	padding: 5px;
 	background-color: blue;
-	float: left;
+	border-radius: 15px;
+	break-inside: avoid;
+	page-break-inside: avoid;
 	text-align: center;
 }
 
 .box3 {
-	width: 240px;
-	height: 140px;
-	margin: 5px 10px 5px 10px;
-	border: solid 5px;
-	border-color: #ff6600;
-	border-radius: 10px;
-	background-color: #ff6600;
-	float: left;
+	padding: 5px;
+	background-color: #F28C26;
+	border-radius: 15px;
+	break-inside: avoid;
+	page-break-inside: avoid;
 	text-align: center;
-
 }
-
-.clear-here {
-	clear: both;
-}
-
 
 .p-box {
 	color: white;
 }
 
-#nav-actual {}
+#nav-actual {
+	margin: 10px auto 10px auto;
+}
 
 .nav-ul {
 	list-style-type: none;
 	display: block;
+	margin: 10px auto 10px auto;
+	padding: 10px;
 }
 
 .nav-li {
