@@ -16,6 +16,7 @@
 /* Draws a grid within a container (has horizonal rows and vertical columns)*/
 
 
+
 html {
 font-size:10px;
 font-family: 'Dosis', 'sans-serif', 'Times New Roman' ; /* Didn't load the first font... I need to look into that... But this has been great to test the back up fonts! */
@@ -44,8 +45,8 @@ header {
 }
 
 p {
-	font-size: 2rem;
-	color: #727272;
+	font-size: 2.5rem;
+	color: #ffffff;
 }
 
 a {
@@ -75,16 +76,16 @@ a:active {
 
 h1 {
 	margin: 0px;
-	font-size: 4rem;
+	font-size: 5rem;
 	color: #727272;
 
 }
 
 h2 {
-		font-size: 3.0rem;
+		font-size: 4rem;
 		color: #727272;
-}
 
+	}
 h3 {
 	color: white;
 	font-size: 3rem;
@@ -97,7 +98,7 @@ h4 {
 }
 
 li {
-	font-size: 1.8rem;
+	font-size: 2.5rem;
 	line-height: 1.5;
 	color: #727272;
 }
@@ -140,22 +141,39 @@ Or at least passible. I'll rise to that challenge, but I am struggling to find e
 	vertical-align: middle; /* Top and bottom centerage.*/
 }
 
+@media screen  and (max-width: 600px) /* if true, these are applied */
+{	.float-better {
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	width: 80%;
+	column-gap: 10px;
+	column-count: 1;
+	vertical-align: middle;
+}}
+
+
+
 .box1 {
 	padding: 5px;
 	background-color: red;
+	font-size: 2.5rem;
+	color: #2b0000;
 	border-radius: 15px;
-	break-inside: avoid; /* I really followed the tutorial on this and the page-break-inside property. I got the gist that it would not Break
+	break-inside: avoid-column; /* I really followed the tutorial on this and the page-break-inside property. I got the gist that it would not Break
 	the column until there was another <h2-3-4> tag... seems to work fantastic, but the technical function of it is still unclear (or maybe its really that simple...?)*/
 	page-break-inside: avoid;
 	text-align: center;
-
 }
+
+
 
 .box2 {
 	padding: 5px;
 	background-color: blue;
+	font-size: 2.5rem;
+	color: #fefefe;
 	border-radius: 15px;
-	break-inside: avoid;
+	break-inside: avoid-column; /* "avoid-column" seems to work better than just "avoid" on some fiery browsers. */
 	page-break-inside: avoid;
 	text-align: center;
 }
@@ -163,14 +181,12 @@ Or at least passible. I'll rise to that challenge, but I am struggling to find e
 .box3 {
 	padding: 5px;
 	background-color: #F28C26;
+	font-size: 2.5rem;
+	color: #2b0000;
 	border-radius: 15px;
-	break-inside: avoid;
+	break-inside: avoid-column;
 	page-break-inside: avoid;
 	text-align: center;
-}
-
-.p-box {
-	color: white;
 }
 
 #nav-actual {

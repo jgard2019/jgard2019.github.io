@@ -39,37 +39,50 @@ header {
   border: double 3px;
   border-radius: 15px;
   box-shadow: 3px 3px 100px #ffffff inset;
-
 }
 
 img {
   max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 10px 10px 20px; /* h-offset, v-offset, blur, spread color | inset| initial| inherit */
-  padding: 1px;
+  border-radius: 15px;    /* box-shadow: 10px 10px 20px; /* h-offset, v-offset, blur, spread color | inset| initial| inherit */
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
 }
 
 #img-section {
-  width:75%;
+  width:60%;
   float: left;
-  padding: 1em;
+  margin: 0px 5px;
 }
 
-#about-this-picture {
-}
+#about-this-picture {}
 
-#birthplace {
-}
+#birthplace {}
 
-.clear-float-1{
+.clear-float-1
+{
   clear: left;
 }
 
 .bit-columns {}
 
+figure {
+    margin: 0px;
+}
 
 figcaption {
-  padding: 25px 0px 0px 0px;
+  padding: 5px;
+  color: white;
+  background color: gray;
+  border: solid 3px black;
+  border-radius: 10px;
+  text-align: center;
+
+
 }
 footer {
   width: 75%;
