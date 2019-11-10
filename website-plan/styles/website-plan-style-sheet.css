@@ -1,0 +1,32 @@
+html {
+  background-color: #999999;
+}
+
+header {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1 {
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  background-color: #b3b3b3;
+  margin: 20px auto;
+  padding: 20px;
+  width: 75%;
+  font-size: 16px;
+  font-family: 'roboto' , 'verdana' , 'times new roman';
+}
+
+main {
+  background-color: #cccccc;
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+section {}
