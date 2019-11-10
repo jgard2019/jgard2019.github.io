@@ -50,16 +50,17 @@ p {
 }
 
 a {
-	font-size: 2rem;
+	font-size: 20px;
 }
 
 a:link {
-	color: #001BEA;
+	color: #00ff00;
 	text-decoration: none;  /* "Text decoration is mostly used to remove underlines from links" Thanks w3 schools. */
+	font-size: 20px;
 }
 
 a:visited {
-	color: #EA0000;
+	color: #006600;
 }
 
 a:hover {
@@ -193,19 +194,21 @@ Or at least passible. I'll rise to that challenge, but I am struggling to find e
 	margin: 10px auto 10px auto;
 }
 
+
 .nav-ul {
 	list-style-type: none;
 	display: block;
-	margin: 10px auto 10px auto;
-	padding: 10px;
 }
 
 .nav-li {
+	display: inline-block;
 	background-color: black;
 	background-image: linear-gradient(to top right, #000000, #727272);
 	border-radius: 10px;
- 	display: inline;
 	padding: 5px 15px 5px 15px;
-	margin: 5px;
+	margin: 10px 2px;
+	width: 200px;
+	color: #ffffff;
+	font-size: 20px;
 
 }
