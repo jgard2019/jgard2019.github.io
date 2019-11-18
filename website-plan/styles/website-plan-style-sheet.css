@@ -30,3 +30,28 @@ main {
 }
 
 section {}
+
+/* Table Styles*/
+table {
+  width: 95%;
+  background-color: black;
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+tr {
+  background-color: #cccccc;
+  padding: 3px;
+  text-align: center;
+}
+
+th {
+  background-color: #cccccc;
+  padding: 3px;
+  text-align: center;
+}
+
+td {
+  padding: 3px;
+}
