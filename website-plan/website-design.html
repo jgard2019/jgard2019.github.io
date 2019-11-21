@@ -1,0 +1,474 @@
+<html lang="en">
+  <head>
+    <style>
+      html {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer {
+        border-top: 6px solid #999;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      /* I picked some really awful colors. Curious to see how many of you modify them. */
+      section h1 {
+        background-color: #f8dea5;
+        padding: .5em;;
+        border-top: 5px solid #995c33;
+        border-radius: 10px;
+        margin-left: -.5em;
+        margin-right: -.5em;
+      }
+      header h1 {
+        background-color: #995c33;
+        color: #ccc;
+        padding: .5em;;
+        border-top: 5px solid #f8dea5;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+      header nav ul {
+        list-style-type: none;
+        background-color: #f7c049;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #995c33;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #f8dea5;
+      }
+      #project-plan dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #project-plan dd:last-child {
+        border-bottom: 6px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      #development-guide ul li {
+        line-height: 1.5;
+      }
+      ul.structure,
+      ul.structure ul {
+        list-style: none;
+      }
+      ul.structure li.folder:before {
+        content: "\1F4C1";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      ul.structure li:before {
+        content: "\1f4c4";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      .colorcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 1em;
+      }
+      .color-item {
+        border: 1px solid #000;
+        padding: 1em;
+        margin: 0.5em;
+      }
+      .color-chip {
+        width: 100px;
+        height: 100px;
+      }
+      dl.styles-guide dt {
+        font-weight: bold;
+        border-top: 1px dashed #333;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      .code {
+        font-family: "Courier New", Courier, monospace;
+        color: #993333;
+        font-size: 0.9em;
+        margin-left: 2em;
+      }
+      .highlight {
+        background-color: f7c049;
+        font-weight: bold;
+      }
+      img { width: 100%; }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Digital Retreat</title>
+  </head>
+  <body>
+    <header>
+      <h1>Digital Retreat</h1>
+      <p>
+        Developer: Josh G.<br />
+        <!-- this will automatically update with the file date; no need to change it-->
+        <span id="modified"></span>
+        <!--end date section-->
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#project-plan">Project plan</a></li>
+          <li><a href="#development-guide">Development guide</a></li>
+          <li><a href="#design-guide">Design guide</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="project-plan">
+        <h1>Project plan</h1>
+        <dl>
+          <dt>Title</dt>
+          <dd><p>Digital Retreat</p></dd>
+
+          <dt>Goal</dt>
+          <dd>
+            <p>
+              To serve as a place for my thoughts and  web-dev creations, as well as other remembrances.
+            </p>
+          </dd>
+          <dt>Target Audience</dt>
+          <dd>
+            <p>
+              Primarily myself. Close friends, close family. Anyone looking for something random to read.
+            </p>
+          </dd>
+          <dt>Main Features</dt>
+          <dd>
+            <p>
+              Primarily just text with some images. Some web-designs and related ideas.
+            </p>
+          </dd>
+          <dt>Personality</dt>
+          <dd>
+            <p>The mood of the site will be over all relaxing and hopefully intriguing.</p>
+            <p>I'm hoping there will be enough intersting content here for people to stop and spend some time
+              reading/viewing and analysing the site's content.</p>
+          </dd>
+          <dt>Limiting Factors</dt>
+          <dd>
+            <p>
+              Since this project (or a future reiteration of it) will stretch far beyond this quarter, I am a little
+               staggered by this question. But the current limitations are the site interactivity. While I can easily
+               update content by editing the source code, I'd like to eventually be able to update it through the website
+                itself (filling out and submitting forms, uploading pictures through a form or even a drag and drop.) but I believe that requires some back-end abilities. I also don't
+                  have the skillset to be able to divvy the site up between people not logged into a created account, and those
+                  who are. Say for example, I wanted a section of it to be more personal, and didn't want it posted on the public
+                  web, but still wanted it on the site. I could have "private" entries only logged-in users could view.
+            </p>
+          </dd>
+        </dl>
+      </section>
+      <section id="development-guide">
+        <h1>Development guide</h1>
+        <h2>Site structure</h2>
+        <ul>
+          <li>
+            Root Directory
+            <ul>
+              <li>Main index.html - Contains the latest and greatest content updates and tid-bits.</li>
+            </ul>
+
+              <ul>
+                <li>Journal - Contains typical journal ramblings</li>
+                <ul>
+                  <li>journal-index.html</li>
+
+                </ul>
+              </ul>
+
+              <ul>
+                <li>Prose - Attemps at skilled writing to invoke interest/feeling</li>
+                <ul>
+                  <li>prose-index.html</li>
+
+                </ul>
+              </ul>
+
+              <ul>
+                <li>Reviews - My opinions on things (think personal time capsule)</li>
+                <ul>
+                  <li>reviews-index.html</li>
+
+                </ul>
+              </ul>
+
+              <ul>
+                <li>Projects - Web dev projects and ideas for reference</li>
+                <ul>
+                  <li>projects-index.html</li>
+
+                </ul>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Visual representation of site structure</h2>
+        <ul class="structure">
+          <!-- displays as page icon unless you use class="folder" -->
+          <li class="folder">
+            Root Directory
+            <ul>
+              <li>
+                main-index.html
+              </li>
+              <li class="folder">images directory � contains jpgs and gifs and pngs</li>
+              <li class="folder">
+                styles directory � contains all of the style sheets
+              </li>
+              <li class="folder">
+                js directory � contains scripts
+              </li>
+
+              <li class="folder">
+                journal
+                <ul><li>journal-index.html</li></ul>
+              </li>
+              <li class="folder">
+                prose
+                <ul><li>prose-index.html</li></ul>
+              </li>
+              <li class="folder">
+                reviews
+                <ul><li>reviews-index.html</li></ul>
+              </li>
+              <li class="folder">
+                projects
+                <ul><li>projects-index.html</li></ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+        <h2>Navigation elements</h2>
+        <p>
+          Navigation � There is a navigation bar on <span class="highlight">(top-right)</span> that links to all pages in the site.
+        </p>
+        <p>
+          Other navigation elements, if you're using them.
+        </p>
+        <p>
+          Much of the main page will contain some image and a brief description of what that is related to, and link to the corresponding page.
+        </p>
+        <h3>Navigation structure</h3>
+        <ul>
+          <li>Home</li>
+          <li>
+            Journal
+            <ul>
+              <li>
+                What navigation will be on this page? (Links to all other main pages)
+              </li>
+            </ul>
+          </li>
+          <li>
+            Prose
+            <ul>
+              <li>
+                  What navigation will be on this page? (Links to all other main pages)
+              </li>
+            </ul>
+          </li>
+          <li>
+              Reviews
+              <ul>
+                <li>
+                    What navigation will be on this page? (Links to all other main pages)
+                </li>
+              </ul>
+            </li>
+            <li>
+                Projects
+                <ul>
+                  <li>
+                      What navigation will be on this page? (Links to all other main pages)
+                  </li>
+                </ul>
+              </li>
+                  </ul>
+                </li>
+        </ul>
+        <h2>HTML template</h2>
+        <p>
+          I will be basing my pages on <span class="highlight">(link to your own example template, not to mine)</span>
+          <a href="https://jgard2019.github.io/digital-retreat-site/wire-frame.html">this HTML template</a> (It's the wire-frame, but that's all I have coded so far).
+        </p>
+        <h2>Wireframe site</h2>
+        <p>
+            <span class="highlight">These <a href="https://jgard2019.github.io/digital-retreat-site/wire-frame.html">wireframes</a></span> let you navigate
+          the basic structure of my site.
+        </p>
+      </section>
+      <section id="design-guide">
+        <h1>Design guide</h1>
+        <h2>Color Palette</h2>
+        <p>
+          The following is the list of colors that may be used. Tints or changes
+          in opacity may also be used as long as they compliment each other.
+        </p>
+        <p><span class="highlight">Replace the color values with your own colors. Leave the rest of the code alone unless you really want to recode it.</span></p>
+
+        <div class="colorcontainer">
+          <div class="color-item">
+            <p>Spring Green</p>
+            <p>#00f978</p>
+            <div class="color-chip" style="background-color: #00f978"></div>
+          </div>
+
+          <div class="color-item">
+            <p>B'Dazzled Blue</p>
+            <p>#26547c</p>
+            <div class="color-chip" style="background-color: #26547c"></div>
+          </div>
+
+          <div class="color-item">
+            <p>Blue Berry</p>
+            <p>#4392f1</p>
+            <div class="color-chip" style="background-color: #4392f1"></div>
+          </div>
+
+          <div class="color-item">
+            <p>White</p>
+            <p>#ffffff</p>
+            <div class="color-chip" style="background-color: #ffffff"></div>
+          </div>
+
+          <div class="color-item">
+            <p>Purple Navy</p>
+            <p>#564d80</p>
+            <div class="color-chip" style="background-color: #564d80"></div>
+          </div>
+
+          <div class="color-item">
+            <p>Midnight Blue</p>
+            <p>#18206f</p>
+            <div class="color-chip" style="background-color: #18206f"></div>
+          </div>
+        </div>
+
+        <h2>Media assets</h2>
+        <h3>General Guidelines</h3>
+        <ul>
+          <li>
+            <p><span class="highlight">Example text:</span> Images optimized as JPG using the Photoshop save for web feature to
+            determine the best choice. Photos generally saved as JPG.</p>
+            <p>All images will be one of three file types - jpg, png, gif</p>
+          </li>
+          <li>I have not built an image library yet, but I did pick out what I want as a general background image.</li>
+          <li>It's from unsplash which is <a href="https://unsplash.com/license">always free.</a></li>
+          <li><a href="https://raw.githubusercontent.com/jgard2019/jgard2019.github.io/master/digital-retreat-site/images/tanner-vines-vqU-qgyU_mw-unsplash.jpg" target="_blank" >I'll just link it, since I have not resized it yet.</a></li>
+          <li>The majority of photos will be my own. But while the website is under heavy construction, I may use some pretty place-holder pictures from www.unsplash.com</li>
+        </ul>
+        <h2>Styles guide
+          <span class="highlight">
+            ()
+        </span>
+      </h2>
+        <dl class="styles-guide">
+          <dt>Background</dt>
+          <dd>
+            <p>Background is the picture above.</p>
+            <p class="code">{background-color: #000}</p>
+          </dd>
+          <dt>Main Font 'Mallana'</dt>
+          <dd>
+            <p>Text is 'blue berry', 30 pixels</p>
+            <p><link href="https://fonts.googleapis.com/css?family=Mallanna&display=swap" rel="stylesheet"> </p>
+            <p class="code">p { font-size: 14px; color: #4392f1;}</p>
+          </dd>
+          <dt>Header</dt>
+          <dd>
+            <p>
+              The header section is 250px tall, positioned along the top of each page (below the nav bar) with the
+              logo leftish. The background is 'midnight blue'.
+            </p>
+            <p class="code">
+              header { <br>height: 250px; <br>background-color: #000; <br>
+                background-image: url("https://raw.githubusercontent.com/jgard2019/jgard2019.github.io/master/digital-retreat-site/images/tanner-vines-vqU-qgyU_mw-unsplash.jpg"); <br>background-repeat: no-repeat; <br>
+                background-position: center; <br>background-size: cover;<br>}</p>
+          </dd>
+          <dt>Navigation</dt>
+          <dd>
+            <p>
+                The main navigation is 100px tall, positioned: fixed; to the top of the page, spanning the view port width.
+            </p>
+            <p class="code">
+              nav { height: 120px; background-color: #18206f; color: #4392f1; }
+            </p>
+          </dd>
+          <dt>Images</dt>
+          <dd>
+            <p>
+              Most images will 'sit' on a clean white box that acts like a border. They may have a slight shadow to make it appear like it's resting just above it.
+            </p>
+            <p class="code">
+              figure { background-color: 6699CC; border: 2px solid #333333; }
+            </p>
+            <p class="code">img { padding: 1em; }</p>
+          </dd>
+          <dt>Links</dt>
+          <dd>
+            <p>
+              Links will be bright lights in the dark.</p>
+            </p>
+            <p class="code">a { color: #00f978 }</p>
+            <p class="code">a:hover {border: 2px solid #00f978; }</p>
+          </dd>
+        </dl>
+        <h2>Layout sketch</h2>
+        <p>Right click and view-image should turn it right side up.</p>
+        <img src="https://raw.githubusercontent.com/jgard2019/jgard2019.github.io/master/website-plan/images/dr-layout-sketch.jpg" alt="Site layout sketch; email me for details if you can't see it">
+      </section>
+    </main>
+    <footer>
+      &copy;Josh G
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- Script below includes file date update -->
+
+    <script>
+      includeHTML();
+      // get last updated date as a new date object
+      var modDate = new Date(document.lastModified);
+      // set up some formatting options
+      var options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      };
+      // format it
+      var modDateString = modDate.toLocaleDateString("en-US", options);
+      // display it in the document
+      document.getElementById("modified").innerHTML =
+        "Updated: " + modDateString;
+    </script>
+  </body>
+</html>
