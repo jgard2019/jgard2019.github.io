@@ -10,13 +10,13 @@
 
   <title>Digital Retreat - Prose</title>
   <link rel="stylesheet" href="../styles/prose-styles.css">
-    <link rel="stylesheet" href="styles/(res)main-styles.css">
+    <link rel="stylesheet" href="../styles/(res)main-styles.css">
 </head>
 <body>
 
   <header>
     <h1 class="main-title">The Digital Retreat - Prose</h1>
-    <nav>
+    <nav id="button">
       <ul>
         <li><a class="main-nav" href="../main-index.html">Home</a></li>
         <li><a class="main-nav" href="../journal/journal-index.html">Journal</a></li>
@@ -25,6 +25,7 @@
         <li><a class="main-nav" href="../projects/projects-index.html">Projects</a></li>
       </ul>
     </nav>
+    <a id="button2" href="javascript:void(0);" onclick="clickToOpen()"></a>
   </header>
 
     <main>
@@ -52,7 +53,16 @@
       <p class="footer-content">&copy; J. G. BIT 112 Web Authoring Class. Digital Retreat Initial Layout.</p>
     </footer>
 
-
+    <script>
+    function clickToOpen() {
+      var x = document.getElementById("button");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
   </body>
 
 </html>

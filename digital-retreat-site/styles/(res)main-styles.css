@@ -9,14 +9,67 @@ p {}
 
 header {}
 
-.main-title {}
+#button {
+    display: block;
+}
+
+@media only screen and (max-width: 450px) {
+#button {
+  display: none;
+  }
+
+li {
+  display: block;
+  width: 100%;
 
 
-nav {}
+  }
+  .main-title {
+    font-size: 1.8em;
+  }
+  nav {
+    width: 100%;
+    position: static;
+  }
+  .main-nav {
+    display: block;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+#button {
+  display: none;
+  }
+li {
+    display: block;
+
+  }
+nav {
+  width: 100%;
+  position: static;
+  }
+  .main-nav {
+    display: block;
+    width: 30%;
+  }
+}
+
+#button2 {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+}
+
 
 ul {}
 
-li {}
+
 
 .main-nav {}
 
