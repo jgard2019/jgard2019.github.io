@@ -117,7 +117,7 @@ h3 {
 .pics-left {
   margin: 0 auto;
   display : block;
-  padding: 10px;
+  padding: 2px;
   border: hidden 10px #000;
   border-radius: 15px;
 }
@@ -127,7 +127,7 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  grid-gap: 25px 50px;
+  grid-gap: 10px 20px;
   justify-content: space-evenly;
   /* background-color: #26547C;  /* B'Dazzled Blue*/
 }
@@ -136,7 +136,7 @@ h3 {
     grid-column: 1 / span 3 ;
     border: hidden #26547C;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 5px 10px;
     margin: 0 auto;
     color: #000;
     background-color: #26547C;  /* Dark Cerulean */
@@ -145,7 +145,7 @@ h3 {
 .grid-item-2 {
     border: hidden #26547C;
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: 5px 10px;
     margin: 0 auto;
     color: #000;
     background-color: #26547C;  /* Dark Cerulean */
@@ -154,8 +154,8 @@ h3 {
 .grid-item-3 {
     border: hidden #26547C;
     border-radius: 10px;
-    padding: 10px 30px;
-        margin: 0 auto;
+    padding: 5px 10px;
+    margin: 0 auto;
     color: #000;
     background-color: #26547C;  /* Dark Cerulean */
 }

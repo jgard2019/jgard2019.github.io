@@ -13,7 +13,7 @@ header {}
     display: block;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 565px) {
 #button {
   display: none;
   }
@@ -37,7 +37,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 960px) {
+@media only screen and (min-width: 566px) and (max-width: 960px) {
 #button {
   display: none;
   }
@@ -94,8 +94,8 @@ h3 {}
   require more tinkering thats
   different from the other stuff
   so here goes.*/
-
-@media only screen and (max-width: 450px) {
+/*
+@media only screen and (max-width: 565px) {
     .pics-left {
       display: block;
       float: none;
@@ -103,14 +103,14 @@ h3 {}
     }
   }
 
-@media only screen and (min-width: 451px) and (max-width: 960px) {
+@media only screen and (min-width: 566px) and (max-width: 960px) {
     .pics-left {
       display: block;
       float: none;
       margin: 0 auto;
     }
   }
-
+*/
 /* Smart Phones*/
 /*
 only screens (not printers?)
@@ -118,7 +118,7 @@ device max-width 400px, or less, i presume
 use this setting
 */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 565px) {
   .grid-container-1  {
     grid-template-columns: auto;
     grid-template-rows: auto ;
@@ -126,7 +126,7 @@ use this setting
   }
 }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 566px) {
     .grid-item-1 {
         grid-column: 1 / span 1 ;
     }
@@ -139,7 +139,7 @@ only screens (not printers?)
 device max-width 400px, or less, i presume
 use this setting
 */
-@media only screen and (min-width: 451px) and (max-width: 960px) {
+@media only screen and (min-width: 566px) and (max-width: 960px) {
   .grid-container-1  {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -147,7 +147,7 @@ use this setting
   }
 }
 
-  @media only screen and (min-width: 451px) and (max-width: 960px) {
+  @media only screen and (min-width: 566px) and (max-width: 960px) {
     .grid-item-1 {
         grid-column: 1 / span 2 ;
     }
