@@ -9,7 +9,7 @@ body{
   margin: 0 auto;
   top: 100px;
   font-size: 10px;
-  background-color: #083d77;  /* B'Dazzled Blue*/
+  background-color: #052a51;  /* B'Dazzled Blue*/
   background-size: cover;
 }
 
@@ -25,7 +25,7 @@ header{
   font-size: 2em;
   display: block;
   height: 50px;
-  background-color: #171738; /* Middle Red Purple*/
+  background-color: #13132e; /* Middle Red Purple*/
   color: #ffffff; /* White */
   z-index: 2;
 
@@ -60,32 +60,32 @@ li {
 
 
  .main-nav {
-  color: #00f978;
-  background-color: #171738; /*Middle Red Purple */
+  color: #1b998b;
+  background-color: #13132e; /*Middle Red Purple */
   padding: 5px 15px;
   margin: 5px 5px;
-  border: solid #00f978 2px;
+  border: solid #1b998b 2px; /*jungle green*/
   border-radius: 3px;
   text-decoration: none;
 }
 
 .main-nav:hover {
  color: #171738;
- background-color: #00f978; /*Spring Green*/
+ background-color: #1b998b; /*jungle green*/
  padding: 5px 15px;
  margin: 5px 5px;
- border: solid #00f978 2px;
+ border: solid #1b998b 2px;
  border-radius: 3px;
  text-decoration: none;
 }
 
 a {
-  color: #00f978;
+  color: #59b4aa; /*verdigris*/
   text-decoration: none;
 }
 
 a:hover {
-  color: #00f978;
+  color: #59b4aa; /*verdigris*/
   text-decoration: underline;
 }
 
@@ -141,7 +141,7 @@ h3 {
     padding: 10px 30px;
     margin: 0;
     color: #000;
-    background-color: #26547C;  /* Dark Cerulean */
+    background-color: #1b3c59;  /* space cadet */
 }
 
 .grid-item-2 {
@@ -149,7 +149,7 @@ h3 {
     border-radius: 10px;
     padding: 10px 30px;
     color: #000;
-    background-color: #26547C;  /* Dark Cerulean */
+    background-color: #1b3c59;  /* space cadet */
 }
 
 .grid-item-3 {
@@ -157,7 +157,7 @@ h3 {
     border-radius: 10px;
     padding: 10px 30px;
     color: #000;
-    background-color: #26547C;  /* Dark Cerulean */
+    background-color: #1b3c59;  /* space cadet */
 }
 
 .section-container-grid {
@@ -192,7 +192,7 @@ footer {
   font-size: 2em;
   line-height: 100px;
   text-align: center;
-  background-color: #171738; /* Middle Red Purple*/
+  background-color: #13132e; /* Middle Red Purple*/
   z-index: 2;
 
 }

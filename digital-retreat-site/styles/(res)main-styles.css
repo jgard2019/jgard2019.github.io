@@ -13,7 +13,7 @@ header {}
     display: block;
 }
 
-@media only screen and (max-width: 579px) {
+@media only screen and (max-width: 585px) {
 #button {
   display: none;
   }
@@ -37,7 +37,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 580px) and (max-width: 1080px) {
+@media only screen and (min-width: 586px) and (max-width: 1100px) {
 #button {
   display: none;
   }
@@ -63,7 +63,7 @@ nav {
   display: block;
   height: 50px;
   width: 50px;
-  background-color: #fff;
+
 }
 
 .menu-icon {
@@ -126,7 +126,7 @@ device max-width 400px, or less, i presume
 use this setting
 */
 
-@media only screen and (max-width: 579px) {
+@media only screen and (max-width: 585px) {
   .grid-container-1  {
     grid-template-columns: auto;
     grid-template-rows: auto ;
@@ -134,7 +134,7 @@ use this setting
   }
 }
 
-  @media only screen and (max-width: 579px) {
+  @media only screen and (max-width: 585px) {
     .grid-item-1 {
         grid-column: 1 / span 1 ;
     }
@@ -147,7 +147,7 @@ only screens (not printers?)
 device max-width 400px, or less, i presume
 use this setting
 */
-@media only screen and (min-width: 580px) and (max-width: 960px) {
+@media only screen and (min-width: 586px) and (max-width: 960px) {
   .grid-container-1  {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -155,7 +155,7 @@ use this setting
   }
 }
 
-  @media only screen and (min-width: 580px) and (max-width: 960px) {
+  @media only screen and (min-width: 586px) and (max-width: 960px) {
     .grid-item-1 {
         grid-column: 1 / span 2 ;
     }
