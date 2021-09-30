@@ -1,25 +1,7 @@
-/* Positioning is hard. I'm leaving notes here so I can memorize the concepts enough to struggle through until I get it down.*/
-/* Box Level Elements by default stack right on top of eachother!!! */
-
-/* Position Property values: */
-/* STATIC - Static tells the element to position itself using normal document flow (default)*/
-/* RELATIVE - Relative positioning is still considered part of the normal document flow, but it allows you to tweak an elements position based on offset valzues you assign */
-/* ABSOLUTE - Not normal document flow. It removes the element from normal flow and repositions it based on offset values given, allowing others to move into its old position */
-/* INHERIT - inherits parent element values */
-/* FIXED - Fixed elements are considered to be absolutely positioned but they're always positioned relative to the active view port*/
-
-/* Float Property Values - Left, right, none, inherit */
-/* Clear Property specifies what elements cannot float beside the cleared element and on which side. */
-/* Clear Values - none (default), left, right, both, inherit */
-
-/* Display Propert: grid; */
-/* Draws a grid within a container (has horizonal rows and vertical columns)*/
-
-
 
 html {
 font-size:10px;
-font-family: 'Dosis', 'sans-serif', 'Times New Roman' ; /* Didn't load the first font... I need to look into that... But this has been great to test the back up fonts! */
+font-family: 'Times New Roman', 'sans-serif' ; 
 }
 
 body {
