@@ -9,5 +9,17 @@ body {
 }
 
 header {
+    text-align: center;
 
+}
+section{
+    margin: 3em;
+}
+
+p{
+    font-size:large;
+}
+
+footer {
+text-align: center;
 }
