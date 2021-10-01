@@ -5,19 +5,39 @@ html {
 body {
     margin: auto;
     max-width: 90%;
-    background-color: darkgray;
+    background-color:dimgray;
 }
 
 header {
+    background-color: darkgray;
     text-align: center;
-
-}
-section{
-    margin: 3em;
 }
 
-p{
-    font-size:large;
+#nav-actual ul{
+    background-color:darkgray;
+
+
+}
+
+
+.top-section, h2 {
+    background-color: darkgray;
+    max-width: 90%;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.main-section {
+    background-color: darkgray;
+    max-width: 90%;
+    margin: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+
+
 }
 
 footer {
