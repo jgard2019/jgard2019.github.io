@@ -8,6 +8,11 @@ body {
     background-color: dimgray;
 }
 
+main {
+    margin-bottom: 3em;
+    background-color: darkgray;
+}
+
 header {
     max-width: 95%;
     background-color: darkgray;
@@ -16,17 +21,11 @@ header {
     text-align: center;
 }
 
-#nav-actual ul {
-    margin:0;
-    padding:0;
-    background-color: darkgray;
-}
 
 #nav-actual ul li {
     list-style-type: none;
     display: inline;
 }
-
 
 .top-section,
 h2 {
@@ -42,17 +41,44 @@ h2 {
     max-width: 90%;
     padding: 3px;
     margin: 0.5em auto;
+    text-align: center;
+}
+
+.column1 {
+    margin: auto;
+}
+
+.ul-div{
+    margin: auto;
+    max-width: 50%;
     text-align: left;
 }
 
+.column2 {
+    margin: auto;
+}
+
+.vpet-app {
+    text-align: left;
+}
+
+
 footer {
-    position: relative;
+    position: fixed;
+    left: auto;
+    bottom: 0;
+    
+    width: 90%;
     background-color: darkgray;
     height: 2em;
-}
+    
+    border-top: double 5px black;
+
+ }
 
 .footerdiv {
     position: absolute;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
