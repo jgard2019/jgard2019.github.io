@@ -36,45 +36,52 @@ h2 {
     text-align: center;
 }
 
-.main-section {
+.first-section1 {
+    display: flex;
     background-color: darkgray;
     max-width: 90%;
     padding: 3px;
-    margin: 0.5em auto;
-    text-align: center;
-}
-
-.column1 {
     margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 
-.ul-div{
+.second-section1 {
+
+    display: flex;
+    background-color: darkgray;
+    max-width: 90%;
+    padding: 3px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+article {
+    margin: auto;
+    width: 300px;
+}
+
+
+
+.ul-div {
     margin: auto;
     max-width: 50%;
     text-align: left;
 }
 
-.column2 {
-    margin: auto;
-}
-
-.vpet-app {
-    text-align: left;
-}
-
-
 footer {
     position: fixed;
     left: auto;
     bottom: 0;
-    
+
     width: 90%;
     background-color: darkgray;
     height: 2em;
-    
+
     border-top: double 5px black;
 
- }
+}
 
 .footerdiv {
     position: absolute;
