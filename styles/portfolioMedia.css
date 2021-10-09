@@ -1,10 +1,16 @@
 @media screen and (min-device-width: 1px) and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  .first-section1 {
+  header {
     display: flex;
-    grid-gap: 10px;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 2fr 1fr;
+  
   }
 
   .second-section1 {
@@ -18,10 +24,12 @@
 
 @media screen and (min-device-width: 551px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  .first-section1 {
+  header {
     display: flex;
-    grid-gap: 20px;
-    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
   }
@@ -37,18 +45,21 @@
 
 @media screen and (min-device-width: 1250px) and (max-device-width: 1900px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  .first-section1 {
+  header {
     display: flex;
-    grid-gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+
 
   .second-section1 {
     display: flex;
     grid-gap: 10px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -57,12 +68,14 @@
 
 @media screen and (min-device-width: 1900px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  .main-section {
+  header {
     display: flex;
-    grid-gap: 10px;
-    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
     flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .second-section1 {
@@ -76,12 +89,14 @@
 
 @media screen and (min-device-width: 1921px) and (max-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  .main-section {
+  header {
     display: flex;
-    grid-gap: 10px;
-    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
     flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .second-section1 {
