@@ -8,9 +8,24 @@
 
   .top-section {
     display: flex;
-    flex-direction: row;
-    grid-template-columns: 2fr 1fr;
-  
+    flex-direction: column;
+  }
+
+  #profile-pic {
+     flex-shrink: 3;
+     align-self: center;
+  }
+
+  .business-card h1 {
+    font-size: 25px;
+  }
+
+  .business-card h2 {
+    font-size: 18px;
+  }
+
+  .business-card h3 {
+    font-size: 14px;
   }
 
   .second-section1 {
