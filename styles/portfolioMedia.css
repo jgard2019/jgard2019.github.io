@@ -9,12 +9,13 @@
   .top-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 
-  #profile-pic {
+  /* #profile-pic {
      flex-shrink: 3;
      align-self: center;
-  }
+  } */
 
   .business-card h1 {
     font-size: 25px;
