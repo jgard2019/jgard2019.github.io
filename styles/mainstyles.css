@@ -89,6 +89,7 @@ a:active {
 }
 
 .skills {
+    text-align: center;
     flex-basis: 75%;
     background-color: transparent;
 }
@@ -96,9 +97,7 @@ a:active {
 #skills-ul {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 500px;
-    align-self: center;
-    background-color:white;
+    background-color:transparent;
 }
 
 .skills h1, .business-card h1 {
@@ -128,10 +127,12 @@ a:active {
 }
 
 .skills li {
+    
+    display:block ;
     list-style-type: none;
-    padding: 10px;
-    text-align: left;
-    display: inline;
+    padding: 0px 10px;
+    text-align: center;
+    
 }
 
 section {
