@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 1px) and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1px) and (max-device-width: 729px) and (-webkit-min-device-pixel-ratio: 1) {
 
   header {
     display: flex;
@@ -7,15 +7,9 @@
   }
 
   .top-section {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    justify-content: space-around;
   }
-
-  /* #profile-pic {
-     flex-shrink: 3;
-     align-self: center;
-  } */
 
   .business-card h1 {
     font-size: 25px;
@@ -30,15 +24,13 @@
   }
 
   .second-section1 {
-    display: flex;
+    display: grid;
     grid-gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 
 }
 
-@media screen and (min-device-width: 551px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 730px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
 
   header {
     display: flex;
@@ -51,15 +43,13 @@
   }
 
   .second-section1 {
-    display: flex;
+    display: grid;
     grid-gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-device-width: 1250px) and (max-device-width: 1900px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1201px) and (max-device-width: 10000px) and (-webkit-min-device-pixel-ratio: 1) {
 
   header {
     display: flex;
@@ -73,54 +63,11 @@
 
 
   .second-section1 {
-    display: flex;
+    display: grid;
     grid-gap: 10px;
     flex-wrap: wrap;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-}
-
-@media screen and (min-device-width: 1900px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 1) {
-
-  header {
-    display: flex;
-  }
-
-  .top-section {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .second-section1 {
-    display: flex;
-    grid-gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-device-width: 1921px) and (max-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 1) {
-
-  header {
-    display: flex;
-  }
-
-  .top-section {
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .second-section1 {
-    display: flex;
-    grid-gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }

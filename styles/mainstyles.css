@@ -7,21 +7,29 @@ body {
     background-color: #F8F7F5;
 }
 
-main {
-    max-width: 95%;
-    margin: 0px auto 4em auto;
-}
-
 header {
     width: 100%;
     height: 205px;
     background-color: #fff;
     margin: 0;
-    justify-content: end;
+}
+
+img {
+    display: block ;
+    max-width: 100%;
+
+}
+
+#logo-div {
+    margin: 2rem;
+    align-self:flex-start;
+    flex-grow:5;
 }
 
 #nav-actual {
-    padding: 2em;
+    padding: 1em;
+    flex-grow: 0;
+    align-items: center;
 }
 
 #nav-actual ul li a {
@@ -30,6 +38,21 @@ header {
     font-size: 19px;
     padding: 0 23px;
 }
+
+#nav-actual ul li {
+
+    list-style-type: none;
+    display: inline;
+    font-family: Roboto;
+    font-size: 19px;
+    text-align: left;
+}
+
+main {
+    max-width: 95%;
+    margin: 0px auto 4em auto;
+}
+
 
 a {
     text-decoration: none;
@@ -50,57 +73,61 @@ a:active {
     color: #566ae3;
 }
 
-#nav-actual ul li {
-
-    list-style-type: none;
-    display: inline;
-    font-family: Roboto;
-    font-size: 19px;
-    text-align: left;
+.top-section {
+    margin: 0 auto;
+    max-width: 1350px;
+    gap: 2em;
 }
 
-.top-section {
-    justify-content: center;
-    gap: 2em;
+#profile-pic {
+    flex-basis:content;
 }
 
 .business-card {
     background-color: transparent;
-    /* width: ; */
+    flex-basis:content
 }
 
-#profile-pic {}
+.skills {
+    flex-basis: 75%;
+    background-color: transparent;
+}
 
-.business-card h1 {
+#skills-ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    align-self: center;
+    background-color:white;
+}
 
+.skills h1, .business-card h1 {
     font-size: 45px;
     color: #13315c;
     padding: 0;
     margin: 0;
-
 }
 
-.business-card h2 {
+.skills h2, .business-card h2 {
     font-size: 28px;
     color: #13315c;
     padding: 0;
     margin: 0;
-
 }
 
-.business-card h3 {
+.skills h3, .business-card h3 {
     font-size: 16px;
     color: #13315c;
     padding: 0;
     margin: 0;
 }
 
-.business-card ul {
+.skills ul {
     padding: 0;
     margin: 0;
 }
 
-.business-card li {
+.skills li {
     list-style-type: none;
     padding: 10px;
     text-align: left;
@@ -108,9 +135,11 @@ a:active {
 }
 
 section {
-
+    margin: 0 auto;
     text-align: center;
     background-color: #808a9f;
+    max-width: 1350px;
+    border-radius: 4px;
 }
 
 h2 {
@@ -144,7 +173,7 @@ article {
     background-color: #ffffff;
     margin: 1em auto;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 650px;
     border-radius: 4px;
 }
 
