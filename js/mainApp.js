@@ -9,7 +9,7 @@ function clearChildrenElements(element) {
 //add listeners
 const vpLink = document.querySelector(".vPetLink");
 vpLink.addEventListener("click", () =>{
-    window.location.href = "./virtualPet.html";
+    window.location.href = "./virtualPet";
     //window.location.replace("");
 });
 
