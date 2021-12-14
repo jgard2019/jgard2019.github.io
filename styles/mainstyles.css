@@ -55,7 +55,6 @@ main {
     margin: 0px auto 4em auto;
 }
 
-
 a {
     text-decoration: none;
     color: #566ae3;
@@ -134,6 +133,7 @@ a:active {
     list-style-type: none;
     padding: 0px 10px;
     text-align: center;
+    margin: 0 0.5rem;
     
 }
 
@@ -147,8 +147,8 @@ section {
 
 h2 {
     font-size: 28px;
+    margin: 1rem;
 }
-
 
 
 .first-section1 {
@@ -200,4 +200,12 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+li {
+    margin: 1rem;
 }

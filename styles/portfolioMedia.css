@@ -1,14 +1,11 @@
 @media screen and (min-device-width: 1px) and (max-device-width: 729px) and (-webkit-min-device-pixel-ratio: 1) {
 
   header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
   }
 
   .top-section {
     display: grid;
-    flex-direction: column;
   }
 
   .business-card h1 {
@@ -65,8 +62,6 @@
   .second-section1 {
     display: grid;
     grid-gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
