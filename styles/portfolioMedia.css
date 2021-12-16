@@ -1,12 +1,20 @@
-@media screen and (min-device-width: 1px) and (max-device-width: 729px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1px) and (max-width: 880px) {
 
   header {
     display: grid;
   }
 
+  #nav-actual li {
+    display: list-item !important;
+  }
+
   .top-section {
     display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
   }
+
 
   .business-card h1 {
     font-size: 25px;
@@ -22,12 +30,13 @@
 
   .second-section1 {
     display: grid;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
 
 }
 
-@media screen and (min-device-width: 730px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 881px) and (max-width: 1400px) {
 
   header {
     display: flex;
@@ -35,18 +44,17 @@
 
   .top-section {
     display: flex;
-    flex-direction: row;
     grid-template-columns: 1fr 1fr;
   }
 
   .second-section1 {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-device-width: 1201px) and (max-device-width: 10000px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1401px) and (max-width: 10000px) {
 
   header {
     display: flex;
@@ -57,7 +65,6 @@
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
   }
-
 
   .second-section1 {
     display: grid;

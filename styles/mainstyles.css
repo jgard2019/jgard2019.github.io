@@ -1,35 +1,29 @@
-html {
-    background-color: #F8F7F5
-}
-
 body {
     margin: auto;
-    background-color: #F8F7F5;
+    background-color: #fff;
+    z-index: -1;
 }
 
 header {
     width: 100%;
-    height: 205px;
     background-color: #fff;
     margin: 0;
 }
 
 img {
-    display: block ;
+    display: block;
     max-width: 98%;
     margin: 1rem 1rem;
-    
-
 }
 
 #logo-div {
-    margin: 2rem;
-    align-self:flex-start;
-    flex-grow:5;
+    margin: 0rem 2rem;
+    align-self: flex-start;
+    flex-grow: 5;
 }
 
 #nav-actual {
-    padding: 1em;
+    padding: 0rem 1rem;
     flex-grow: 0;
     align-items: center;
 }
@@ -50,9 +44,14 @@ img {
     text-align: left;
 }
 
+/* bg color */
 main {
-    max-width: 95%;
-    margin: 0px auto 4em auto;
+    position: absolute;
+    background-color: #F8F7F5;
+    top: 13.5rem;
+    width: 100%;
+    height: 1200px;
+    z-index: -1;
 }
 
 a {
@@ -75,47 +74,53 @@ a:active {
 }
 
 .top-section {
-    margin: 0 auto;
+    margin: 2rem auto 2rem auto;
     max-width: 1350px;
     gap: 2em;
 }
 
 #profile-pic {
-    flex-basis:content;
+    flex-basis: content;
 }
 
 .business-card {
     background-color: transparent;
-    flex-basis:content
+    flex-basis: content
 }
 
 .skills {
     text-align: center;
-    flex-basis: 75%;
+    flex-basis: 40%;
     background-color: transparent;
 }
 
-#skills-ul {
-    display:grid;
+
+#skills-ul-div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color:transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
 
-.skills h1, .business-card h1 {
+.skills h1,
+.business-card h1 {
     font-size: 45px;
     color: #13315c;
     padding: 0;
     margin: 0;
 }
 
-.skills h2, .business-card h2 {
+.skills h2,
+.business-card h2 {
     font-size: 28px;
     color: #13315c;
     padding: 0;
     margin: 0;
 }
 
-.skills h3, .business-card h3 {
+.skills h3,
+.business-card h3 {
     font-size: 16px;
     color: #13315c;
     padding: 0;
@@ -128,13 +133,12 @@ a:active {
 }
 
 .skills li {
-    
-    display:block ;
+    display: block;
     list-style-type: none;
     padding: 0px 10px;
     text-align: center;
     margin: 0 0.5rem;
-    
+
 }
 
 section {
@@ -151,19 +155,7 @@ h2 {
 }
 
 
-.first-section1 {
-    display: flex;
-    background-color: #808a9f;
-    max-width: 90%;
-    padding: 3px;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-}
-
 .second-section1 {
-
-    display: flex;
     background-color: #808a9f;
     max-width: 90%;
     padding: 3px;
@@ -183,6 +175,17 @@ article p {
     padding: 1.5em;
     font-size: 16px;
     font-family: Roboto;
+}
+
+.projectPicDiv {
+    margin: 1rem auto;
+    width: 95%;
+}
+
+.projectPicImg {
+    margin: 1rem auto;
+    
+    
 }
 
 footer {
@@ -206,6 +209,7 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 li {
     margin: 1rem;
 }
