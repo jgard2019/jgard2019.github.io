@@ -19,7 +19,12 @@ img {
 #logo-div {
   margin: 0rem 2rem;
   align-self: flex-start;
-  flex-grow: 5;
+  flex-grow: 1;
+}
+
+.logo-link {
+  display: block;
+  max-width: 5rem;
 }
 
 #nav-actual {
@@ -218,9 +223,10 @@ li {
 }
 
 .project-images {
-  width: 98%;
+  margin: 0 auto;
+  width: 95%;
   display: none;
-  height: 45rem;
+  max-height: 45rem;
 }
 
 .button-left {
