@@ -1,7 +1,7 @@
 // slide show
 const leftButton = document.querySelector(".button-left");
 const rightButton = document.querySelector(".button-right");
-const cityImagesArr = Array.from(document.querySelectorAll(".city-images"));
+const cityImagesArr = Array.from(document.querySelectorAll(".project-images"));
 
 leftButton.addEventListener("click", () => {
   decrementPicture();
