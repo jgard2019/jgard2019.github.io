@@ -4,7 +4,7 @@
 }
 
 html {
-    background-image: url("/src/img/fresh-tasty-donuts-with-glaze.jpg");
+    background-image: url("../../images/fresh-tasty-donuts-with-glaze.jpg");
     background-size: cover;
 }
 
