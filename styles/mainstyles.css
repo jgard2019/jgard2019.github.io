@@ -218,7 +218,9 @@ li {
 }
 
 .city-images {
-    display:none;
+  width: 98%;
+  display: none;
+  height: 45rem;
 }
 
 .button-left {
@@ -229,7 +231,16 @@ li {
   border-radius: 3px;
   color: white;
   left: 0px;
-  top: 20%;
+  top: 45%;
+}
+
+.button-left:hover {
+  position: absolute;
+  padding: 28px 8px;
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  border: solid black 2px;
 }
 
 .button-right {
@@ -240,5 +251,13 @@ li {
   border-radius: 3px;
   color: white;
   right: 0px;
-  top: 20%;
+  top: 45%;
+}
+
+.button-right:hover {
+  position: absolute;
+  padding: 28px 8px;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
 }
