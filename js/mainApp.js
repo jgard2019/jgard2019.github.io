@@ -16,6 +16,11 @@ chLink.addEventListener("click", () =>{
     window.location.href = "./cityHoppers";
 });
 
+const donutsLink = document.querySelector(".donutMakerLink");
+donutsLink.addEventListener("click", () =>{
+    window.location.href = "./donutMaker";
+});
+
 
 
 export { clearChildrenElements };
