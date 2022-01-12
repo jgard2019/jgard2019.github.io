@@ -267,3 +267,11 @@ li {
   color: black;
   border: solid black 2px;
 }
+
+.embed-space-invaders {
+  position:relative;
+  background-color: white;
+  min-width: 600px;
+  min-height: 600px;
+  border-radius: 4px;
+}
