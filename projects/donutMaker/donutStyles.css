@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("/src/img/fresh-tasty-donuts-with-glaze.jpg");
+    background-size: cover;
+}
+
+li{
+    
+    padding: .4rem;
+    list-style: none;
+    background-color: white;
+}
+
+h1 {
+    padding: 0.5rem;
+    color: black;
+    
+}
+
+h3 {
+    padding: 0.5rem;
+    color: black;
+    font-size: x-large;
+}
+
+.container{
+    width: 20%;
+    border-radius: 5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin: 0 auto;
+    padding: 5rem;
+    
+}
+
+section{
+    width: 180px;
+}
+
+.donut-counter {
+    padding: 2rem;
+}
+
+#makeDonuts:hover {
+    border-style: none;
+    color: white;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+button {
+    width: 180px;
+    min-height: 55px;
+    padding: 1rem .25rem;
+    margin: 1rem .25rem;
+    background-color:white;
+    color: blue;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 14px;
+}
+
+button:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(241, 241, 241);
+    position:relative;
+    bottom: 3px;
+
+}
+
+button:active{
+    position:relative;
+    bottom: 0;
+}
+
+button:disabled {
+    background-color: rgba(207, 207, 207, 0.308);
+    color:rgb(0, 37, 139);
+    cursor:not-allowed;
+}
+
+.reset {
+    border-style: none;
+    background-color: red;
+    padding: .25rem;
+    margin: .25rem;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.reset:hover {
+    border-style: none;
+    position: fixed;
+    bottom: 3px;
+}
+
+.reset:active{
+    position:fixed;
+    bottom: 0px;
+}

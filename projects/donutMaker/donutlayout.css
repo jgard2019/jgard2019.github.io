@@ -1,0 +1,11 @@
+.action-bar-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+   }
+   
+   .section2 {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       justify-items: center;
+   }
