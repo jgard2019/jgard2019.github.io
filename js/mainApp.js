@@ -10,7 +10,18 @@ function clearChildrenElements(element) {
 const vpLink = document.querySelector(".vPetLink");
 vpLink.addEventListener("click", () =>{
     window.location.href = "./virtualPet";
-    //window.location.replace("");
 });
+
+const chLink = document.querySelector(".citiesReviewLink");
+chLink.addEventListener("click", () =>{
+    window.location.href = "./cityHoppers";
+});
+
+// slide show
+const leftButton = document.querySelector(".button-left");
+const rightButton = document.querySelector(".button-right");
+const grabCityImages = Array.from(document.querySelectAll(".city-images"));
+
+
 
 export {clearChildrenElements}
