@@ -21,6 +21,9 @@ donutsLink.addEventListener("click", () =>{
     window.location.href = "./donutMaker";
 });
 
-
+const spaceInvadersLink = document.querySelector(".spaceInvadersLink");
+spaceInvadersLink.addEventListener("click", () =>{
+    window.location.href = "./spaceInvaders";
+});
 
 export { clearChildrenElements };

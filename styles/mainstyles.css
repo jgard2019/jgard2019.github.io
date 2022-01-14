@@ -36,7 +36,6 @@ img {
 }
 
 #nav-actual ul li a {
-  text-decoration: none;
   color: #566ae3;
   font-size: 19px;
   padding: 0 23px;
@@ -73,11 +72,13 @@ a:visited {
 }
 
 a:hover {
-  color: #566ae3;
+  text-decoration: underline;
+  transition: box-shadow 0.3s ease;
+  
 }
 
 a:active {
-  color: #566ae3;
+  color: #000000;
 }
 
 .top-section {
@@ -96,6 +97,7 @@ a:active {
 }
 
 .skills {
+  padding: 1rem;
   text-align: center;
   flex-basis: 40%;
   background-color: white;
@@ -122,8 +124,8 @@ a:active {
 .business-card h2 {
   font-size: 28px;
   color: #13315c;
-  padding: 0;
-  margin: 0;
+  margin: 0rem 1rem;
+  padding: 0rem  1rem;
 }
 
 .skills h3,
@@ -167,7 +169,12 @@ section {
 
 h2 {
   font-size: 28px;
-  margin: 1rem;
+  margin: 0rem 1.5rem;
+  padding: 1.5rem 0;
+}
+
+h3{
+  margin: 0.5rem 1rem;
 }
 
 .second-section1 {
@@ -179,7 +186,7 @@ h2 {
 
 article {
   background-color: #ffffff;
-  margin: 1em auto;
+  margin: 1rem auto;
   min-width: 300px;
   max-width: 650px;
   border-radius: 4px;
@@ -197,7 +204,8 @@ article {
 }
 
 article p {
-  padding: 1.5em;
+  margin: 0.5rem 0;
+  padding: 0.5em 1.5rem;
   font-size: 16px;
 }
 
@@ -211,6 +219,7 @@ article p {
 }
 
 footer {
+  font-family: Roboto, Tahoma;
   position: fixed;
   left: auto;
   bottom: 0;
