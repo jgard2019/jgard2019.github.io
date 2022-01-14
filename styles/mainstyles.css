@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 body {
   margin: auto;
   background-color: #fff;
@@ -43,7 +45,7 @@ img {
 #nav-actual ul li {
   list-style-type: none;
   display: inline;
-  font-family: Roboto;
+  font-family: Roboto, Tahoma;
   font-size: 19px;
   text-align: left;
 }
@@ -96,7 +98,8 @@ a:active {
 .skills {
   text-align: center;
   flex-basis: 40%;
-  background-color: transparent;
+  background-color: white;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 #skills-ul-div {
@@ -147,9 +150,19 @@ a:active {
 section {
   margin: 0 auto;
   text-align: center;
-  background-color: #808a9f;
+  background-color: rgba(128, 138, 159, 0.2);
   max-width: 1350px;
   border-radius: 4px;
+
+  font-family: Roboto, Tahoma;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+.insert-content {
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -158,7 +171,6 @@ h2 {
 }
 
 .second-section1 {
-  background-color: #808a9f;
   max-width: 90%;
   padding: 3px;
   margin: auto;
@@ -171,12 +183,22 @@ article {
   min-width: 300px;
   max-width: 650px;
   border-radius: 4px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vPetLink:hover,
+.citiesReviewLink:hover,
+.donutMakerLink:hover,
+.spaceInvadersLink:hover,
+.dndCharCreaterLink:hover {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+  outline: 2px solid black;
 }
 
 article p {
   padding: 1.5em;
   font-size: 16px;
-  font-family: Roboto;
 }
 
 .projectPicDiv {
@@ -269,7 +291,7 @@ li {
 }
 
 .embed-space-invaders {
-  position:relative;
+  position: relative;
   background-color: white;
   min-width: 600px;
   min-height: 600px;
