@@ -1,0 +1,22 @@
+.about-me-info {
+  max-width: 650px;
+}
+
+.slide-show-container {
+  max-width: 650px;
+  position: relative;
+  background-color: white;
+  padding: 0rem .5rem;
+  margin: 1rem auto;
+  border-radius: 4px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-imgdiv {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.about-me-img {
+    margin: 1rem auto;
+}

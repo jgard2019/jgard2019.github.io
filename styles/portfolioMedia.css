@@ -1,5 +1,4 @@
 @media screen and (min-width: 1px) and (max-width: 880px) {
-
   header {
     display: grid;
   }
@@ -14,7 +13,6 @@
     justify-items: center;
     align-items: center;
   }
-
 
   .business-card h1 {
     font-size: 25px;
@@ -36,12 +34,10 @@
 
   .image-ss {
     grid-column: 1 / span 1;
-   }
-
+  }
 }
 
 @media screen and (min-width: 881px) and (max-width: 1400px) {
-
   header {
     display: flex;
   }
@@ -59,12 +55,10 @@
 
   .image-ss {
     grid-column: 1 / span 2;
-   }
-
+  }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 10000px) {
-
   header {
     display: flex;
   }
@@ -81,8 +75,19 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
- .image-ss {
-  grid-column: 1 / span 4;
- }
+  .image-ss {
+    grid-column: 1 / span 4;
+  }
 
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
+  .slide-show-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
 }

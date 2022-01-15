@@ -26,4 +26,9 @@ spaceInvadersLink.addEventListener("click", () =>{
     window.location.href = "./spaceInvaders";
 });
 
+const oneShotWizardLink = document.querySelector(".dndCharCreaterLink");
+oneShotWizardLink.addEventListener("click", () =>{
+    window.location.href = "./oneShotWizard";
+});
+
 export { clearChildrenElements };

@@ -14,8 +14,8 @@ header {
 
 img {
   display: block;
-  max-width: 98%;
-  margin: 1rem 1rem;
+  max-width: 95%;
+  margin: 1rem 0;
 }
 
 #logo-div {
@@ -125,7 +125,7 @@ a:active {
   font-size: 28px;
   color: #13315c;
   margin: 0rem 1rem;
-  padding: 0rem  1rem;
+  
 }
 
 .skills h3,
@@ -150,7 +150,7 @@ a:active {
 }
 
 section {
-  margin: 0 auto;
+  margin: 2rem auto;
   text-align: center;
   background-color: rgba(128, 138, 159, 0.2);
   max-width: 1350px;
@@ -169,8 +169,8 @@ section {
 
 h2 {
   font-size: 28px;
-  margin: 0rem 1.5rem;
-  padding: 1.5rem 0;
+  margin: .5rem 1.5rem;
+  padding: 0.5rem 0;
 }
 
 h3{
@@ -298,6 +298,9 @@ li {
   color: black;
   border: solid black 2px;
 }
+
+
+/* space invaders*/
 
 .embed-space-invaders {
   position: relative;
