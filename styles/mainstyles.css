@@ -200,7 +200,7 @@ article {
 .dndCharCreaterLink:hover {
   transition: box-shadow 0.3s ease;
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
-  outline: 2px solid black;
+  outline: 3px solid #566ae3;;
 }
 
 article p {
